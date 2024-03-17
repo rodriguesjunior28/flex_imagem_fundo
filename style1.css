@@ -1,0 +1,118 @@
+/* Resetar */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+nav,ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    color: #000000;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Configuração Geral do Header */
+header {
+    background-color: beige;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+/* Configuração da Largura da Imagem da Logo */
+header img {
+    width: 100px;
+}
+
+/* Configuração dos Nomes do Header */
+header nav {
+    display: flex;
+    
+    /* Aqui centraliza os textos do header */
+    margin-inline: 31%;
+    text-align: center;
+}
+
+header li {
+    margin: 0 15px;
+}
+
+header li a {
+    font-size: 1.5rem;
+}
+
+/* Configuração da Margem da Palavra Home */
+header li:first-child {
+    margin-left: 0;
+}
+
+/* Configuração da Margem da Palavra Contato */
+header li:last-child {
+    margin-right: 0;
+}
+
+/* Configuração da Logo */
+.logo {
+    border-radius: 36px;
+    padding: 12px;
+}
+
+/* Configuração da Imagem do Fundo */
+.hero {
+    align-items: center;
+    background-image: url(imagem/Esperanca-696x524.jpg);
+    background-size: 100% 100%;
+    background-clip: content-box; 
+    background-repeat: no-repeat;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.slogan {
+    color: blue;
+    font-size:  2.2rem;
+    background-color: hsla(250, 23%, 82%, 0.801);
+    margin-bottom: 15px;
+}
+
+/* Configuração da Frase do Site */
+.subtitulo {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 6em;
+}
+
+/* Confiruação do Botão */
+.hero .btn {
+    background-color: #ff0000;
+    border-radius: 10px;
+    color: black;
+    padding: 20px 50px;
+    opacity: 20;
+    border: 4px solid #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.hero .btn:hover {
+    background-color: hsla(0, 0%, 100%, 0.8);
+}

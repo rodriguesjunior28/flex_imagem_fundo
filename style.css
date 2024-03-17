@@ -1,0 +1,122 @@
+/* Reseta o HTML */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Configuração geral do a, a:hover */
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+    color: #000000;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+/* Configuração da cor só a parte onde fica a logo */
+header {
+    background-color: beige;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: aqua;
+}
+
+/* Imagem da logo */
+header img {
+    width: 100px;
+    border-radius: 36px;
+    padding: 12px;
+}
+
+/* Alinha a logo e os nomes da tag li */
+/* e o list-syle, retira as bolinhas da tag li */
+header nav {
+    display: flex;
+    list-style: none;
+}
+
+/* Separa os nomes da tag li */
+header li {
+    margin: 0 15px;
+}
+
+/* Configuração dos nomes da tag li */
+header li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5em;
+}
+
+/* Alinha a margem do no Home */
+header li:first-child {
+    margin-left: 0;
+}
+
+/* Alinha a margem do Contato */
+header li:last-child {
+    margin-right: 0;
+}
+
+/* Alinhamento de todos os componentes da HERO - class, id, h1, h3 e a */
+.hero {
+    /*align-items: center;*/
+    background-image: url(imagem/vida-simples-sentido-da-vida-1.png);
+    background-clip: content-box;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    /*text-align: center;*/
+}
+
+/* Configura somente o h3 porque as configuração de alinhamento já foi feita na class hero */
+.subtitulo {
+    color: #000000;
+    font-size: 2rem;
+    margin-bottom: 2em;
+    
+    /* Acresentei pra poder jogar a frase mais para baixo */
+    margin-inline: 18%;
+    text-align: right;
+    padding-top: 30%;
+}
+
+/* Alinha o btn dentro do processo */
+.botao {
+    padding: 0;
+    padding-bottom: 12%;
+    margin-left: 10px;
+}
+
+/* Alinhando somente o botão */
+/*.btn {
+    background-color: #ff0000;
+    border-radius: 10px;
+    color: black;
+    padding: 20px 50px;
+    opacity: 20;
+    border: 4px solid #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-inline: 71% 15%;
+        
+    text-align: center;
+}*/
+
+.hero .btn:hover {
+    background-color: hsla(0, 0%, 100%, 0.8);
+}
+
