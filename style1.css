@@ -1,4 +1,4 @@
-/* Resetar */
+/* Reset do html */
 
 * {
     margin: 0;
@@ -116,3 +116,328 @@ header li:last-child {
 .hero .btn:hover {
     background-color: hsla(0, 0%, 100%, 0.8);
 }
+
+
+ /* pra ficar tudo um embaixo do outro em sequência */
+ .portifolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: yellowgreen;
+}
+
+.portifolio h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.portifolio p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.portifolio hr {
+    width: 200px;
+    height: 2px;
+    background-color: aquamarine;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.primeira_imagem {
+    background-image: url(imagem/grande.jpg);
+}
+
+.segunda_imagem {
+    background-image: url(imagem/pequena.jpg);
+}
+
+.terceira_imagem {
+    background-image: url(imagem/pequena.jpg);
+}
+
+.quarta_imagem {
+    background-image: url(imagem/grande.jpg);
+}
+
+.portifolio .galeria {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* quando não está cabendo em uma página aqui fica duas linhas */
+}
+
+/* Alinhou as imagem com o flex-basis */
+.portifolio .galeria li {
+    height: 400px;
+    padding: 20px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+    flex-basis: 100%;
+    border-radius: 4px
+}
+
+.portifolio .galeria li.pequena{
+    flex-basis: 40%;
+}
+
+.portifolio .galeria li.grande {
+    flex-basis: 60%;
+}
+
+/* Icones do site */
+
+/* Alinhamento Geral */
+.informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #191c03;
+}
+
+.informacoes h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    text-align: center;
+    color: beige;
+}
+
+.informacoes > p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.informacoes hr {
+    width: 70%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 70px;
+    border: none;
+}
+
+.informacoes .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+    gap: 10%;
+    list-style: none;
+}
+
+.informacoes .links .li {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.informacoes .links li img {
+    color: #c3c63b;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.informacoes .links h4 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.informacoes .links li p {
+    color: #fff;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+
+/*  */
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.newsletter h3 {
+    font-size: 2rem;
+    margin-bottom: 35px;
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+.newsletter p {
+    max-width: 800px;
+    margin-bottom: 35px;
+    text-align: center;
+    color:black;
+    font-size: 1.3rem;
+}
+
+.newsletter hr {
+    width: 45%;
+    height: 2px;
+    background-color: blue;
+    margin-bottom: 10%;
+    border: none;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.newsletter input {
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 4px;
+    margin-right: 4%;
+    flex: 1; /* Ele procura ocupar o maior espaço possivel  */
+}
+
+.newsletter button {
+    padding: 14px;
+    background-color: blueviolet;
+    color: black;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: rgba(253, 0, 215, 0.729);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Rodapé */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    padding: 50px;
+}
+
+footer ul {
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly; /* espaço ficar igual entre os icones */
+    gap: 3%;
+    list-style: none;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li a img {
+    min-width: 4vh;
+    max-width: 4vh;
+}
+
+footer p {
+    color: black;
+    font-size: 1.2rem;
+    margin-left: -10px;
+}
+
+
+/* Header */
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        background-size: auto;
+    }
+
+    header img {
+        margin-bottom: 20px;
+    }
+
+    .logo {
+        margin-bottom: 40px;
+    }
+
+    header li a {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* hero */
+@media screen and (max-width: 900px) {
+    .slogan {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .slogan {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 0.5rem;
+    }
+    
+}
+
+
+
+/* informações */
+@media(max-width: 1000px) {
+    .informacoes .galeria li.pequeno, .informacoes .galeria li.grande {
+        flex-basis: 100%;
+    }
+}
+
+
+
+/* links */
+@media (max-width:1000px) {
+    .informacoes .links {
+        flex-direction: column;
+    }
+
+    .informacoes .links p {
+        margin-bottom: 10%;
+    }
+}
+
+
+
+/* Newsletter */
+@media (max-width: 1000px) {
+    .newsletter form input {
+        flex-basis: 100%;
+        margin-bottom: 10%;
+    } 
+}
+
+
+
+/* Footer */
